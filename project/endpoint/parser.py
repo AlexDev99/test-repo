@@ -79,6 +79,8 @@ def read_file(file):
                         company1.fact = fact
                         company1.forecast = forecast
 
+                        create_post(company1)
+
                     if parsed_json['company'][j] == 'company2':
                         fact_first_column_list_add_two.append(parsed_json['fact'][j])
                         fact_second_column_list_add_two.append(parsed_json['Unnamed: 3'][j])
@@ -113,5 +115,4 @@ def read_file(file):
                         company2.fact = fact
                         company2.forecast = forecast
 
-
-    return create_post()
+                        create_post(company2)

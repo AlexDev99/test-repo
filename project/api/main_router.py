@@ -13,3 +13,8 @@ def get_oper():
 @router.post('/upload')
 async def uploadFile(file: UploadFile = File(...)):
     parser(file.file.read())
+
+
+@router.get('/list')
+def get():
+    return data()

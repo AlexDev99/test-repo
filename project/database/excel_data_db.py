@@ -11,7 +11,7 @@ excel_data = data.Table(
     data.Column("date", data.DateTime, default=datetime.datetime.utcnow()),
     data.Column("company", data.String),
     data.Column("plan_fact", data.String),
-    data.Column("plan_fact", data.String),
+    data.Column("plan_forecast", data.String),
     data.Column("identification", data.String),
     data.Column("count", data.Integer)
 )

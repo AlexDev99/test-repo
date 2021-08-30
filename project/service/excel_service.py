@@ -19,5 +19,4 @@ async def create_post(post: ExcelModel):
             excel_data.c.plan_forecast,
         )
     )
-    post = await database.fetch_one(query)
-    return post
+    await database.fetch_one(query)
